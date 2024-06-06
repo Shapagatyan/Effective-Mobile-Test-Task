@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChooseTicketsController" customModule="Effective_Mobile_Test_Task" customModuleProvider="target">
+            <connections>
+                <outlet property="arrivalCityTextField" destination="Kmv-jS-igk" id="OBJ-uX-tyh"/>
+                <outlet property="collectionView" destination="5Q9-jI-auZ" id="auv-vL-CCF"/>
+                <outlet property="departureСityTextField" destination="bhN-RU-w17" id="6hW-1b-6ZH"/>
+                <outlet property="searchBarFirstBackView" destination="mtW-kC-fru" id="4qS-yM-ime"/>
+                <outlet property="searchBarSecondBackView" destination="rU1-b3-HDL" id="Iwa-Ha-GDI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="247" verticalCompressionResistancePriority="747" axis="vertical" alignment="center" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="yZ8-kO-vql">
+                    <rect key="frame" x="16" y="92" width="361" height="544.66666666666663"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Поиск дешевых авиабилетов" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJo-9H-qTu">
+                            <rect key="frame" x="96" y="0.0" width="169" height="52.666666666666664"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <color key="textColor" name="AppTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mtW-kC-fru">
+                            <rect key="frame" x="0.0" y="88.666666666666671" width="361" height="139.66666666666663"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rU1-b3-HDL">
+                                    <rect key="frame" x="16" y="16.000000000000007" width="329" height="107.66666666666669"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="3da-Sq-m2O">
+                                            <rect key="frame" x="8" y="12" width="305" height="83.666666666666671"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="KIV-4d-gIz">
+                                                    <rect key="frame" x="0.0" y="27.333333333333343" width="28.666666666666668" height="29"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="KIV-4d-gIz" secondAttribute="height" multiplier="24:24" id="ceB-S3-We6"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="80s-xH-Tb9">
+                                                    <rect key="frame" x="40.666666666666657" y="0.0" width="264.33333333333337" height="83.666666666666671"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Минск" placeholder="Отку" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bhN-RU-w17" customClass="TextField" customModule="Effective_Mobile_Test_Task" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="264.33333333333331" height="41"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="textColor" name="AppTextColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="address-level2"/>
+                                                        </textField>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDb-Th-NL5">
+                                                            <rect key="frame" x="0.0" y="41" width="264.33333333333331" height="2"/>
+                                                            <color key="backgroundColor" name="AppGrey6"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="2" id="b5Z-7D-pCd"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Куда - Гюмри" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kmv-jS-igk" customClass="TextField" customModule="Effective_Mobile_Test_Task" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="43" width="264.33333333333331" height="40.666666666666657"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="textColor" name="AppTextColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textField>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="bhN-RU-w17" firstAttribute="height" secondItem="Kmv-jS-igk" secondAttribute="height" id="zsh-NZ-ss6"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="80s-xH-Tb9" firstAttribute="height" secondItem="3da-Sq-m2O" secondAttribute="height" id="RxD-8X-Vgq"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" name="AppGrey4"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="3da-Sq-m2O" secondAttribute="bottom" constant="12" id="04w-yC-Fhl"/>
+                                        <constraint firstItem="KIV-4d-gIz" firstAttribute="height" secondItem="rU1-b3-HDL" secondAttribute="height" multiplier="24:90" id="AzA-wi-dxl"/>
+                                        <constraint firstItem="3da-Sq-m2O" firstAttribute="top" secondItem="rU1-b3-HDL" secondAttribute="top" constant="12" id="F7p-yF-YQs"/>
+                                        <constraint firstAttribute="trailing" secondItem="3da-Sq-m2O" secondAttribute="trailing" constant="16" id="VYd-dv-ScL"/>
+                                        <constraint firstItem="3da-Sq-m2O" firstAttribute="leading" secondItem="rU1-b3-HDL" secondAttribute="leading" constant="8" id="q9x-BT-fEa"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" name="AppGrey3"/>
+                            <constraints>
+                                <constraint firstItem="rU1-b3-HDL" firstAttribute="leading" secondItem="mtW-kC-fru" secondAttribute="leading" constant="16" id="3I8-uB-Lgt"/>
+                                <constraint firstAttribute="trailing" secondItem="rU1-b3-HDL" secondAttribute="trailing" constant="16" id="GPN-GI-xFV"/>
+                                <constraint firstAttribute="bottom" secondItem="rU1-b3-HDL" secondAttribute="bottom" constant="16" id="Jvd-sl-Pnq"/>
+                                <constraint firstItem="rU1-b3-HDL" firstAttribute="top" secondItem="mtW-kC-fru" secondAttribute="top" constant="16" id="hNA-dx-JjH"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="hXW-VE-Q7l">
+                            <rect key="frame" x="0.0" y="264.33333333333337" width="361" height="280.33333333333337"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Музыкально отлететь" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHV-aq-cpE">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="26.333333333333332"/>
+                                    <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="22"/>
+                                    <color key="textColor" name="AppTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="5Q9-jI-auZ">
+                                    <rect key="frame" x="0.0" y="52.333333333333371" width="361" height="228"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="68" minimumInteritemSpacing="10" id="e4I-Qp-5cc">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="hXW-VE-Q7l" firstAttribute="width" secondItem="yZ8-kO-vql" secondAttribute="width" id="7Ke-xM-fes"/>
+                        <constraint firstItem="mtW-kC-fru" firstAttribute="width" secondItem="yZ8-kO-vql" secondAttribute="width" id="Q9O-0X-3Kk"/>
+                        <constraint firstAttribute="trailing" secondItem="IJo-9H-qTu" secondAttribute="trailing" constant="96" id="V0k-d9-8bR"/>
+                        <constraint firstItem="IJo-9H-qTu" firstAttribute="leading" secondItem="yZ8-kO-vql" secondAttribute="leading" constant="96" id="dkR-Hp-mhQ"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="mtW-kC-fru" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="122:744" id="073-7I-LwP"/>
+                <constraint firstItem="yZ8-kO-vql" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-16" id="DGi-v0-pGV"/>
+                <constraint firstItem="5Q9-jI-auZ" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="214:800" id="TNJ-KC-pyx"/>
+                <constraint firstItem="yZ8-kO-vql" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="92" id="u3G-EP-c8K"/>
+                <constraint firstItem="yZ8-kO-vql" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="uS4-qN-YUk"/>
+            </constraints>
+            <point key="canvasLocation" x="-2.2900763358778624" y="95.774647887323951"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="SearchIcon" width="24" height="24"/>
+        <namedColor name="AppGrey3">
+            <color red="0.18431372549019609" green="0.18823529411764706" blue="0.20784313725490197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppGrey4">
+            <color red="0.24313725490196078" green="0.24705882352941178" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppGrey6">
+            <color red="0.62352941176470589" green="0.62352941176470589" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppTextColor">
+            <color red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

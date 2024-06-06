@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FiltersCell" customModule="Effective_Mobile_Test_Task" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="210" height="58"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="210" height="58"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="fdG-eJ-Xs8">
+                        <rect key="frame" x="12" y="4" width="186" height="50"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wQj-Wf-0sY">
+                                <rect key="frame" x="0.0" y="17.666666666666668" width="15" height="15.000000000000004"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="wQj-Wf-0sY" secondAttribute="height" id="I66-kb-X0V"/>
+                                    <constraint firstAttribute="height" constant="15" id="gs6-74-KeL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1u-zZ-8nL">
+                                <rect key="frame" x="17" y="16.666666666666668" width="169" height="17.000000000000004"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                <color key="textColor" name="AppTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <datePicker clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="compact" translatesAutoresizingMaskIntoConstraints="NO" id="CY9-Dg-cil">
+                        <rect key="frame" x="-6" y="0.0" width="222" height="58"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="AppGrey7"/>
+                        <locale key="locale" localeIdentifier="ru"/>
+                    </datePicker>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fdG-eJ-Xs8" secondAttribute="trailing" constant="12" id="3UU-Fm-4uI"/>
+                <constraint firstItem="CY9-Dg-cil" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="-6" id="7eC-Er-8wc"/>
+                <constraint firstAttribute="bottom" secondItem="fdG-eJ-Xs8" secondAttribute="bottom" constant="4" id="M4K-8A-48L"/>
+                <constraint firstAttribute="trailing" secondItem="CY9-Dg-cil" secondAttribute="trailing" constant="-6" id="T6c-NZ-5LW"/>
+                <constraint firstAttribute="bottom" secondItem="CY9-Dg-cil" secondAttribute="bottom" id="UUl-YV-HcM"/>
+                <constraint firstItem="fdG-eJ-Xs8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="pf5-dY-V7A"/>
+                <constraint firstItem="CY9-Dg-cil" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="qoQ-kt-ymJ"/>
+                <constraint firstItem="fdG-eJ-Xs8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="tXD-96-Zye"/>
+                <constraint firstItem="fdG-eJ-Xs8" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="xo0-U5-Qro"/>
+            </constraints>
+            <size key="customSize" width="210" height="58"/>
+            <connections>
+                <outlet property="datePicker" destination="CY9-Dg-cil" id="1VD-1l-n0j"/>
+                <outlet property="icon" destination="wQj-Wf-0sY" id="bId-lE-wih"/>
+                <outlet property="title" destination="M1u-zZ-8nL" id="QXu-Ng-QpR"/>
+            </connections>
+            <point key="canvasLocation" x="248.85496183206106" y="98.591549295774655"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AppGrey7">
+            <color red="0.85882352941176465" green="0.85882352941176465" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppTextColor">
+            <color red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
